@@ -7,12 +7,73 @@ body
 {
     color: #FFFFFF;
 
+    margin: auto;
     margin-top: 100px;
 
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 68px;
+    line-height: 68px;
     text-align: center;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    text-align: center;
+}
+
+ol li
+{
+    display: inline-block;
+    padding: 40px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 1024px)
+and (orientation : portrait)
+{
+    #title
+    {
+        margin-top: 200px;
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    ol
+    {
+        margin-top: 200px;
+    }
+
+    a.social-button
+    {
+        font-size:144px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 1366px)
+and (orientation : landscape)
+{
+    #title
+    {
+        margin-top: 50px;
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    ol
+    {
+        margin-top: 50px;
+    }
+
+    a.social-button
+    {
+        font-size:80px;
+    }
 }
