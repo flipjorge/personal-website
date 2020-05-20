@@ -1,79 +1,67 @@
-body
+#main-container
 {
-    background: black;
-}
-
-#title
-{
-    color: #FFFFFF;
-
-    margin: auto;
-    margin-top: 100px;
-
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 68px;
-    line-height: 68px;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-ol
+#logo
 {
-    padding: 0;
+    display: block;
     margin: 0;
-    margin-top: 100px;
-    text-align: center;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #0197F6;
+    margin-bottom: 100px;
 }
 
-ol li
+#icons
+{
+    margin: 0;
+    padding: 0;
+}
+
+#icons > li
 {
     display: inline-block;
-    padding: 40px;
+    margin: 0 8px;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 1024px)
-and (orientation : portrait)
+#footer
 {
-    #title
-    {
-        margin-top: 200px;
-        font-size: 120px;
-        line-height: 120px;
-    }
-
-    ol
-    {
-        margin-top: 200px;
-    }
-
-    a.social-button
-    {
-        font-size:144px;
-    }
+    position: absolute;
+    right: 4px;
+    bottom: 8px;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 1366px)
-and (orientation : landscape)
+#footer > .item
 {
-    #title
-    {
-        margin-top: 50px;
-        font-size: 120px;
-        line-height: 120px;
-    }
+    display: inline;
+    margin: 0px 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999999;
+}
 
-    ol
-    {
-        margin-top: 50px;
-    }
-
-    a.social-button
-    {
-        font-size:80px;
-    }
+/* social buttons */
+a.social-button.borderless {
+    color:#0197F6;
+    padding: 8px 8px;
+}
+a.social-button.borderless.static:hover, .static a.social-button.borderless:hover {
+    color: #0197F6;
+}
+a.social-button.borderless.icon-twitter:hover {
+    color:#4183C4;
+}
+a.social-button.borderless.icon-linkedin:hover {
+    color:#4183C4;
+}
+a.social-button.borderless.icon-github:hover {
+    color:#4183C4;
 }
