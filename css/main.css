@@ -10,13 +10,13 @@
 
 #logo
 {
-    display: block;
     margin: 0;
     font-family: 'Raleway', 'Open Sans', sans-serif;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: bold;
     color: #0197F6;
     margin-bottom: 100px;
+    white-space: nowrap;
 }
 
 #icons
